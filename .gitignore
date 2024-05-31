@@ -20,16 +20,7 @@
 #---------------------------
 # WordPress plugins
 #---------------------------
-/plugins/*
-
-# DO NOT ignore these plugins...
-!/plugins/wordpress-seo
-
-#---------------------------
-# WP MU plugins: often
-# managed by the platform.
-#---------------------------
-/mu-plugins/
+!/plugins/*
 
 #---------------------------
 # WP uploads directory
