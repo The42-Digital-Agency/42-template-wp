@@ -12,15 +12,6 @@
 #---------------------------
 # WordPress themes
 #---------------------------
-/themes/*
-
-# DO NOT ignore these themes...
-!/themes/42-template-wp
-
-#---------------------------
-# WordPress plugins
-#---------------------------
-!/plugins/*
 
 #---------------------------
 # WP uploads directory
