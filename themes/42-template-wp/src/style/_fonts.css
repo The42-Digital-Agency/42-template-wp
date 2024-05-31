@@ -1,0 +1,19 @@
+:root {
+  --font-primary: Oswald, sans-serif;
+  --font-secondary: Gothic, sans-serif;
+  /*--font-tertiary: ;*/
+  /*--font-quaternary: ;*/
+  /*--font-quinary: ;*/
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../../assets/fonts/Oswald-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gothic';
+  src: url('../../assets/fonts/GOTHIC.ttf') format('truetype');
+  font-weight: 400;
+}

@@ -1,0 +1,27 @@
+/* main.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import '_fonts';
+@import '_reset';
+@import '_menu';
+@import '_marquee';
+
+[x-cloak] {
+  display: none !important;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+@layer base {
+  html *,
+  body * {
+    @apply font-primary;
+  }
+}

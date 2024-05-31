@@ -1,0 +1,34 @@
+{
+  "printWidth": 100,
+  "semi": true,
+  "bracketSameLine": true,
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+  "singleAttributePerLine": true,
+  "tailwindConfig": "./src/tailwind.config.js",
+  "sortTailwindcssClasses": true,
+  "parser": "css",
+  "plugins": [
+    "@prettier/plugin-php",
+    "@shufo/prettier-plugin-blade",
+    "prettier-plugin-tailwindcss"
+  ],
+  "phpVersion": "8.1.23",
+  "overrides": [
+    {
+      "files": ["*.php"],
+      "options": {
+        "parser": "blade"
+      }
+    },
+    {
+      "files": ["*.js"],
+      "options": {
+        "parser": "babel"
+      }
+    }
+  ]
+}
