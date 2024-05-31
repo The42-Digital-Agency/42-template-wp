@@ -21,6 +21,6 @@
 8. In the left sidebar, find the menu item Plugins and activate the plugins you need.
 <br>
    For Advanced Custom Fields PRO, the activation code is:
-     ```sh
+   ```sh
    Y2JkM2JlNmM1MTUzMWUwZWFmMjcwMGE2NWE4MDA0ODk0MjQxZDFjNjY1OGI4NjczMTQ4YTdl
-    ``
+    
