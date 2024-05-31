@@ -1,7 +1,5 @@
 # WordPress Theme Template with Alpine.js, Tailwind CSS, and webpack
 
-This is a template for a WordPress theme using Alpine.js, Tailwind CSS, and webpack.
-
 ## Installation
 
 1. Open Local, click the plus sign (+) in the lower-left corner, and fill in your site details to create your new site.
@@ -21,5 +19,5 @@ This is a template for a WordPress theme using Alpine.js, Tailwind CSS, and webp
   
 7. Go to the WP admin panel, find the menu item Appearance -> Themes in the left sidebar, and activate your theme.
 8. In the left sidebar, find the menu item Plugins and activate the plugins you need.
-  For Advanced Custom Fields PRO, the activation code is:
+   For Advanced Custom Fields PRO, the activation code is:
     `Y2JkM2JlNmM1MTUzMWUwZWFmMjcwMGE2NWE4MDA0ODk0MjQxZDFjNjY1OGI4NjczMTQ4YTdl`
