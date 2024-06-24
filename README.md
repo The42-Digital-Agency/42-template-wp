@@ -1,4 +1,4 @@
-# WordPress Theme Template with Alpine.js, Tailwind CSS, and webpack
+# WordPress Theme Template with Alpine.js, Tailwind SCSS, and webpack
 
 ## Installation
 
