@@ -8,15 +8,11 @@
         x-transition:leave-start="translate-y-0 md:translate-x-0"
         x-transition:leave-end="-translate-y-full md:translate-y-0 md:-translate-x-full"
         id="mobile_menu"
-        class="fixed inset-0 h-full w-full bg-black text-white"
+        class="!z-90 fixed inset-0 h-full w-full bg-neutral-600 text-black"
       >
-        <div
-          style="padding-top: var(--header-height);"
-          class="container flex h-full flex-col justify-between gap-6 pb-4 md:pb-10"
-        >
+        <div class="container flex h-full flex-col justify-between gap-6 pb-4 md:pb-10">
           <div class="flex items-center justify-between py-4">
             <div>Logo</div>
-
             <button @click="$store.mobileMenu.hide()">
               <svg
                 width="45"

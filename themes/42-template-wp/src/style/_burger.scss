@@ -1,0 +1,67 @@
+.burger {
+  $burgerWidth: 29px;
+  $burgerHeight: 10px;
+  $lineHeight: 1px;
+  $middleLinePosition: calc(($burgerHeight / 2) - ($lineHeight / 2));
+
+  position: relative;
+  height: $burgerHeight;
+  width: $burgerWidth;
+  cursor: pointer;
+  transition: all 0.3s linear;
+
+  @media (hover: hover) {
+    &:hover {
+      .burger__line {
+        opacity: 0.9;
+        transform: scale(0.95);
+      }
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      .burger__line {
+        opacity: 0.9;
+        transform: scale(0.95);
+      }
+    }
+  }
+
+  &__line {
+    position: absolute;
+    height: $lineHeight;
+    width: 100%;
+    background-color: #000;
+    transition: all 0.4s ease-in-out;
+    transform-origin: center;
+  }
+
+  &__line--1 {
+    top: 0;
+  }
+
+  &__line--2 {
+    top: $middleLinePosition;
+  }
+
+  &__line--3 {
+    bottom: 0;
+  }
+}
+
+.burger.open {
+  .burger__line--1 {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .burger__line--2 {
+    transform: scale(0);
+  }
+
+  .burger__line--3 {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}

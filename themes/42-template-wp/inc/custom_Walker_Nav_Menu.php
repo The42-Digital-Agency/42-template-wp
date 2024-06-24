@@ -51,20 +51,24 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu
 
 function my_nav_menu($args)
 {
-    $args = array_merge(
-        [
-            'container' => 'div',
-            'container_class' => 'navigation',
-            'menu_class' => 'menu',
-            'echo' => false,
-            'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-            'depth' => 10,
-            'walker' => new Custom_Walker_Nav_Menu(),
-        ],
-        $args,
-    );
+    $theme_location = $args['theme_location'];
 
-    echo wp_nav_menu($args);
+    if (has_nav_menu($theme_location)) {
+        $args = array_merge(
+            [
+                'container' => 'div',
+                'container_class' => 'navigation',
+                'menu_class' => 'menu',
+                'echo' => false,
+                'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                'depth' => 10,
+                'walker' => new Custom_Walker_Nav_menu(),
+            ],
+            $args,
+        );
+
+        echo wp_nav_menu($args);
+    }
 }
 
 ?>
